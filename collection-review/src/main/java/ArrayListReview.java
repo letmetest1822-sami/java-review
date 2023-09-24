@@ -42,15 +42,18 @@ public class ArrayListReview {
         System.out.println("Printing with Lambda........");
         students.forEach(student -> System.out.print(student + " * "));
         System.out.println();
+        System.out.println();
 
         // Sorting Elements in List
         System.out.println("Printing with sorted List by comp..........");
         Collections.sort(students,new sortByIdDesc());
         System.out.println(students);
+        System.out.println();
+
         System.out.println("Printing with sorted List by Name Desc..........");
         Collections.sort(students,new sortByNameDesc());
         System.out.println(students);
-
+        System.out.println();
 
     }
     static class sortByIdDesc implements Comparator<Student>{
