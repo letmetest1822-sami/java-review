@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Team<T> {  //There is no type check. All players can join.  ADD <type> Team<T>
+public class Team<T extends Player> {  //There is no type check. All players can join.  ADD <type> Team<T>
 
     private String name;
 

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class TeamTest {
 
     public static void main(String[] args) {
@@ -6,12 +8,13 @@ public class TeamTest {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer bac = new SoccerPlayer("Bac");
 
-        Team liverPool = new Team("Lieverpool");
+        Team<SoccerPlayer> liverPool = new Team("Liverpool");
 
-        liverPool.addPlayer(joe);
-        liverPool.addPlayer(pat);
+//        liverPool.addPlayer(joe); //Team<SoccerPlayer> prevented them to get in the team
+//        liverPool.addPlayer(pat); //Team<SoccerPlayer> prevented them to get in the team
         liverPool.addPlayer(bac);
         System.out.println(liverPool.numPlayers());
 
+//        Team<String> brokenTeam = new Team<>("This wont work");
     }
 }
